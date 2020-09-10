@@ -26,6 +26,10 @@ class SquareMatrix:
                 return (x, y)
 
 
+    def get_size(self):
+        return self.size
+
+
     def create_matrix(self, size):
         self.matrix = np.zeros(shape=(size, size))
         self.size = size
@@ -50,11 +54,28 @@ class PrecolationCheck:
 
     matrix = None
 
+
     def __init__(self):
         self.main()
 
-    def dfs(self, matrix):
+
+    def dfs(self, matrix, coordinate_start):
+        def check_round(matrix, coordinate):
+            
+        coordinate_current = coordinate_start
+        coordinate_tree = []
+        while True:
+            self.matrix.get_value() 
+                
+
+    def analyse_matrix(self):
         pass
+
+      
+    def load_matrix_test(self):
+        self.matrix.set_value(1, (0,0))
+        self.matrix.set_value(1, (0,1))
+        self.matrix.set_value(1, (0,2))
 
 
     def setup(self):
@@ -63,10 +84,13 @@ class PrecolationCheck:
 
     def main(self):
         self.setup()
+        self.load_matrix_test()
+        """
         while True:
             coordinate = self.matrix.get_coordinate_free()
             if coordinate[1] == 0:
-            
+                matrix.set_value(2, )
+        """
 
 
 
